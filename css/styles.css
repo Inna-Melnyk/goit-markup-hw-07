@@ -74,7 +74,6 @@ img {
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
-
 }
 
 @media screen and (min-width: 428px) {
@@ -109,6 +108,7 @@ img {
 .header {
   box-shadow: var(--main-shadow);
 }
+
 .logo {
   display: block;
 
@@ -134,6 +134,10 @@ img {
   display: flex;
   margin-left: 120px;
 }
+.nav-list:not(:last-child){
+  
+}
+
 @media screen and (min-width: 1158px) {
   .nav-list {
     margin-left: 77px;
@@ -420,16 +424,17 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media screen (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .overlay {
     background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ), url(../images/herobg-mob@2x.jpg);
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herobg-mob@2x.jpg);
   }
 }
 /* tab screen */
@@ -438,25 +443,26 @@ img {
   .overlay {
     max-width: 768px;
     min-height: 436px;
-     background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/herobg-tab@1x.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herobg-tab@1x.jpg);
   }
 }
 
-@media screen (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and
-  (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and
-  (min-resolution: 192dpi), (min-width: 768px) and
-  (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi),
+  (min-width: 768px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ), url(../images/herobg-tab@2x.jpg);
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herobg-tab@2x.jpg);
   }
 }
 /* desk screen  */
@@ -466,23 +472,24 @@ img {
     min-height: 603px;
 
     background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/herobg@1x.jpg);
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herobg@1x.jpg);
   }
 }
-@media screen (min-width: 1158px) and (min-device-pixel-ratio: 2), (min-width: 1158px) and
-  (-webkit-min-device-pixel-ratio: 2), (min-width: 1158px) and
-  (min-resolution: 192dpi), (min-width: 1158px) and
-  (min-resolution: 2dppx) {
+@media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+  (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 1158px) and (min-resolution: 192dpi),
+  (min-width: 1158px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ), url(../images/herobg@2x.jpg);
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herobg@2x.jpg);
   }
 }
 
@@ -1230,6 +1237,7 @@ img {
   position: absolute;
   left: 50%;
   top: 50%;
+  
 
   padding: 24px;
 
@@ -1252,7 +1260,7 @@ img {
   right: 24px;
   top: 24px;
 
-  content: "";
+  
   display: flex;
   height: 24px;
   width: 24px;
@@ -1290,7 +1298,7 @@ img {
   color: var(--color-headings);
 }
 
-.registration_form {
+.registration-form {
   width: 100%;
 }
 
@@ -1300,7 +1308,7 @@ img {
   transition: outline var(--trans-dur) var(--trans-timing-func);
 }
 .registration-form-field + .registration-form-field {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 .registration-form-label {
